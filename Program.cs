@@ -2,7 +2,7 @@
 
 var input = File.ReadAllLines("input.txt");
 
-var type = Assembly.GetCallingAssembly().GetTypes().First(x => x.Name == "Day4");
+var type = Assembly.GetCallingAssembly().GetTypes().First(x => x.Name == "Day5");
 var day = (IDay)Activator.CreateInstance(type)!;
 
 Console.WriteLine(day.Part1(input));
